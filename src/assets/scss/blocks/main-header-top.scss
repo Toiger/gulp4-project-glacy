@@ -1,0 +1,38 @@
+.main-header {
+  box-sizing:border-box;
+  position: relative;
+}
+
+.main-header-top{
+  box-sizing:border-box;
+  padding: 9px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.working-info{
+&__conainer{
+  // margin: 0 0 271px 0;
+  width: 100%;
+  display: grid;
+  justify-content: end;
+  text-align: end;
+  }
+
+&__text{
+  display: block;
+  margin: 0 0 8px 0;
+  color: $basic-neitral;
+  font-family: Roboto-bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+&__link{
+  font-family: Roboto-bold;
+  font-size: 22px;
+  line-height: 24px;
+  color: $basic-neitral;
+  text-decoration: none;
+}
+}

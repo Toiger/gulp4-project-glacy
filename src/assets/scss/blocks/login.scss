@@ -1,0 +1,48 @@
+.login-wrap {
+  display: none;
+  box-sizing: border-box;
+  position: absolute;
+  top: 64px;
+  right: 295px;
+  padding: 20px;
+  height: 214px;
+  width: 277px;
+  border-radius: 5px;
+  background-color: $basic-neitral;
+  box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.4);  
+}
+
+.authorization{
+  &__login-input, &__password-input{
+    box-sizing:border-box;
+    margin: 0 0 20px 0;
+    padding: 15px;
+    width: 241px;
+    height: 44px;
+    font-size: 14px;
+    color: #999999;
+    outline: none;
+    border: 1px solid #d3d3d2;
+    border-radius: 5px;
+  }
+  &__link{
+    font-family: Roboto-Regular;
+    font-size: 13px;
+    line-height: 24px;
+    color: $basic-black;
+    text-decoration: underline;
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    text-decoration-color: $basic-black ;
+    text-underline-position: under;
+    &:hover{
+      color: $authorization-link-second-color;
+      text-decoration-color: $authorization-link-second-color;
+    }
+  }
+  &__link-button{
+    display: flex;
+    justify-content: space-around;
+  }
+}

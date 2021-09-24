@@ -1,0 +1,64 @@
+
+.offers{
+
+  &__inner{
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  }
+
+
+  &__item{
+  display: block;
+  box-sizing: border-box;
+  width: 560px;
+  min-height: 229px;
+  padding: 23px 20px;
+  font-family: Roboto-bold;
+  color: $basic-neitral;
+  background-position: center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  border-radius: 16px;
+  }
+
+  &__item--left{
+    background-image:url(/../assets/images/malinovyy_fon_1485.jpg);
+  }
+
+  &__item--right{
+    background-image:url(/../assets/images/shokoladnyy_fon_1565.jpg);
+  }
+
+  &__title {
+    display: block;
+    margin: 0 0 20px 0;
+    font-size: 35px;
+    line-height: 41px;
+  }
+
+  &__text{
+    margin: 0 0 45px 0;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__button{
+    display: block;
+    box-sizing: border-box;
+    min-height: 46px;
+    margin-left: auto;
+    padding: 15px 22px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  &__button--left{
+    width: 165px;
+  }
+
+  &__button--right{
+    width: 190px;
+  }
+
+}

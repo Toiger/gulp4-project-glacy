@@ -1,0 +1,35 @@
+.button{
+  display: block;
+  min-width: 100px;
+  min-height: 44px;
+  color: #fefefe;
+  font-family: Roboto-bold;
+  font-weight: 700;
+  border-radius: 70px;
+  box-shadow: 0 2px 2px $btn-gradient-second-color;
+  background-image: linear-gradient(180deg, #e74a35 0%, #f26843 100%);
+  border: none;
+  text-decoration: none;
+  transition: all .3s;
+
+  &--header{
+    width: 280px;
+    height: 64px;
+    font-size: 32px;
+  }
+
+  &:hover{
+    background-image: linear-gradient(0.0deg, #eb6e5d 0%, #f48668 100%);
+    box-shadow: 0px 2px 2px 0px #ac1000;
+    cursor: pointer;
+    transition: all .3s;
+
+  }
+
+  &:focus{
+    background-image: linear-gradient(0.0deg, #e1613e 0%, #d74531 100%);
+    box-shadow: inset 0px 2px 2px 0px #942718;
+  }
+
+  
+}

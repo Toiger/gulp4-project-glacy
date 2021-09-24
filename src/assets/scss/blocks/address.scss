@@ -1,0 +1,82 @@
+.address{
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.map{
+  display: block;
+  width: 100%;
+  min-height: 430px;
+}
+
+.contacts{
+  &__container{
+    position: absolute;
+    padding: 30px 25px;
+    left: 64%;
+    top: 60px;
+    display: block;
+    max-width: 302px;
+    width: 100%;
+    min-height: 305px;
+    background-color: $basic-neitral;
+    z-index: 10;
+    border-radius: 16px;
+  }
+
+  &__address{
+    margin-bottom: 20px;
+  }
+
+  &__phone-number{
+    margin-bottom: 25px;
+  }
+
+  &__text{
+    display: block;
+    width: 150px;
+    font-family: Roboto-regular;
+    font-size: 14px;
+    line-height: 20px;
+    color: $basic-light-black;
+  }
+
+  &__link{
+    display: block;
+    text-decoration: none;
+    font-family: Roboto-bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: $basic-light-black;
+  }
+
+  &__link-number{
+    margin: 8px 0;
+  }
+
+  &__button{
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.contacts__phone-number > .contacts__text{
+  width: 100%;
+}
+
+.google-map{
+  position: relative;
+  z-index: 2;
+
+  &::before{
+    content:"";
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 140px;    
+    background-image:url(../images/pin_2997.png);
+    z-index: 8;
+  }
+}

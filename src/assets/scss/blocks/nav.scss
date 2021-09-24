@@ -1,0 +1,189 @@
+.nav__wrap {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.site-navigation {
+  display: flex;
+  margin: 0 0 0 24px;
+  padding: 0;
+
+
+  &__item {
+  display: block;
+  box-sizing: border-box;
+  padding-bottom: 5px;
+
+    &:hover{
+    padding-bottom: 5px;
+  }
+
+    &:hover .site-navigation__item-link{
+    color: $basic-black;
+    text-decoration: none;
+    border: 1px solid $basic-neitral;
+    background-color: $basic-neitral;
+    border-radius: 26px;
+  }
+
+    &:active{
+    box-shadow: inset 0 2px 1px;
+  }
+}
+}
+
+
+.site-navigation__item-link{
+    font-family: Roboto-Regular;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    height: 31px;
+    display: block;
+    padding: 5px 13px 10px;
+    box-sizing: border-box;
+    border-radius: 26px;
+    text-decoration-color: rgba(255, 255, 255, 0.2);
+    text-underline-position: under;
+    color: $basic-neitral;
+    border: 1px solid transparent;
+    // transition: ease-in-out .3s;
+}
+
+.dropdawn-menu{
+    display: none;
+    box-sizing:border-box;
+    margin-top: 5px;
+    margin-left: -8px;
+    box-shadow: 0 20px 20px $menu-shadow-color;
+    width: 143px;
+    background-color: $basic-neitral;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 5px 0;
+    position: absolute;
+    list-style-type: none;
+
+
+  &__link{
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 21px;
+    height: 27px; 
+    color: $basic-black;
+    text-decoration: none; 
+    display: block;
+    width: 100%;
+    padding: 4px 4px 4px 0;
+    box-sizing: border-box;
+  }
+
+  &__item{
+    position: relative;
+
+    &:first-child::after{
+      content: "";
+      left: 7px;
+      position: absolute;
+      display: block;
+      width: 128px;
+      height: 1px;
+      background-color: $basic-black;
+      z-index: 10;
+    }
+  }
+}
+
+.site-navigation li:hover > ul {
+    display: block;
+}
+
+ .dropdawn-menu > li:first-child{
+  font-family: Roboto-bold;
+  margin-bottom: 5px;
+  padding-bottom: 2px;
+}
+
+.dropdawn-menu > li:hover{
+  background-color: $menu-hover-background-color;
+}
+
+.dropdawn-menu > li:active{
+  background-color: $menu-active-background-color;
+}
+
+.dropdawn-menu > li:focus{
+  background-color: $menu-focus-background-color;
+}
+
+
+.nav-right{
+
+&__list{
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+&__link{
+  position: relative;
+  display: block;
+  padding: 10px 17px 9px 45px;
+  text-decoration: none;
+  font-family: Roboto-Medium;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: $basic-neitral;
+  background-color: rgba(255,255,255,0.2);
+  border-radius:20px;
+
+  &:hover{
+    background-color: $basic-neitral;
+    color: $basic-black;
+  }
+
+  &:hover > svg{
+    fill: $basic-black;
+  }
+}
+}
+
+.authorization-icon, .basket-icon {
+  position: absolute;
+  top: 6px;
+  left: 16px;
+  fill: $basic-neitral;
+}
+
+.search-icon{
+  position: absolute;
+  top: 7px;
+  left: 8px;
+  fill: $basic-neitral;
+}
+
+.link-search{
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: block;
+  background-color:rgba(255,255,255,0.2);
+
+  &:hover{
+    background-color: $basic-neitral;
+    color: $basic-black;
+  }
+
+  &:hover > svg{
+    fill: $basic-black;
+  }
+}

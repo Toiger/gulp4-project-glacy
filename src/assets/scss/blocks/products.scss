@@ -1,0 +1,111 @@
+.products-wrap {
+  margin: 0 -13px;
+  padding: 0 0 40px 0;
+}
+
+.products{
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+  &__button{
+    display: none;
+    padding: 13px 17px;
+    box-sizing:border-box;
+    margin: 12px 0 0 0;
+    width: 205px;
+    height: 44px; 
+    font-size: 18px;
+    text-align: center;
+    z-index: 2;
+  }
+
+  &__item {
+    position: relative;
+    padding: 6px 13px 20px;
+    margin-bottom: -82px;
+    box-sizing:content-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 267px;
+    min-height: 402px;
+    transition: all .3s;
+
+    &--hits{
+      &::before{
+        content: "";
+        position:absolute;
+        display: block;
+        left: 20px;
+        width: 61px;
+        height: 61px;
+        background-image:url(../images/khit_2969.png);
+        z-index: 6;
+      }
+    }
+
+
+    &:hover{
+      z-index: 5;
+      background-color: rgba(248,247,244, .2);
+      box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.4);
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    &:hover .products__button{
+      display: block;
+    }
+}
+
+  &__picture{
+    display: block;
+    border-radius: 50%;
+    margin: 0 0 17px 0;
+}
+
+  &__price-inner {
+    position: absolute;
+    bottom: 70px;
+    display: block;
+    margin: 0;
+    left: 20px;
+    top: 211px;
+    padding: 0;
+    z-index: 4;
+    font-family: Roboto-bold;
+    color: $basic-neitral;
+}
+
+  &__price--left {
+    font-size: 45px;
+    line-height: 45px;
+}
+
+  &__price--right {
+    font-size: 30px;
+    line-height: 35px;
+}
+
+  &__title {
+    display: block;
+    font-family: Roboto-Medium;
+    font-weight: 500;
+    line-height: 22px;
+    color: $basic-neitral;
+    text-align: center;
+    text-decoration-color: $underline-color;
+    text-underline-position: under;
+    z-index: 7;
+    transition: all .3s;
+
+    &:hover{
+      color: $authorization-link-second-color;
+    }
+}
+}

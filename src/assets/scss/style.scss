@@ -1,0 +1,91 @@
+@import "vars";
+@import "mixins";
+@import "vendor/reset";
+@import "fonts";
+
+
+.site-wrapper {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+    min-height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 14px;
+    box-sizing:border-box;
+    margin: 0 auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: $first-background-color;
+
+    &.no-scroll { 
+        overflow: hidden;
+    }
+    
+    @include breakpoint($tablet-bp) {
+        &.show-sidebar {
+            overflow: hidden;
+        }
+    }
+}
+
+.site-wrapper-1{
+    background-color: $first-background-color;
+    background-image: url(../images/slider-img-1.png);
+}
+
+.site-wrapper-2{
+    background-color: $second-background-color;
+    background-image: url(../images/slider-img-2.png);
+}
+
+.site-wrapper-3{
+    background-color: $third-background-color;
+    background-image: url(../images/slider-img-3.png);
+}
+
+.page{
+    height: 100%;
+}
+
+
+.container {
+    width: 1146px;
+    box-sizing:border-box;
+    margin: 0 auto;
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+/* Blocks */
+@import "blocks/main-header-top";
+@import "blocks/button";
+@import "blocks/nav";
+@import "blocks/search";
+@import "blocks/slider";
+@import "blocks/offers.scss";
+@import "blocks/login.scss";
+@import "blocks/products.scss";
+@import "blocks/advantages.scss";
+@import "blocks/news-distribution.scss";
+@import "blocks/address.scss";
+@import "blocks/dawn-footer.scss";
+

@@ -1,0 +1,81 @@
+.news-distribution{
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0 40px 0;
+}
+
+.news{
+ &__article{
+  display: block;
+  box-sizing:border-box;
+  max-width: 560px;
+  width: 100%;
+  min-height: 220px;
+  padding: 26px 20px;
+  background-image:url(../images/klubnichnyy_fon_1569.jpg);
+  border-radius: 16px;
+ }
+ &__title{
+  display: block;
+  font-family: Roboto-Medium;
+  font-size: 16px;
+  line-height: 22px;
+  color: $basic-black;
+ }
+ &__lead{
+  display: block;
+  max-width: 280px;
+  font-family: Roboto-bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: $basic-black;
+  text-underline-position: under;
+  transition: ease-in-out .1s;
+
+  &:hover{
+    color: $authorization-link-second-color;
+  }
+ }
+}
+
+.distribution{
+  &__inner{
+    max-width: 560px;
+    width: 100%;
+    min-height: 220px;
+    padding: 6px;
+    background-image:url(../images/pochtovyi__fon_2995.png);
+    border-radius:16px;
+ }
+  &__content{
+    display:block;
+    box-sizing:border-box;
+    max-width: 548px;
+    min-height: 208px;
+    padding: 30px 20px;
+    background-color: $basic-neitral;
+    border-radius: 16px;
+  }
+  &__text{
+    margin-bottom: 38px;
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    line-height: 22px;
+    color: $basic-light-black;
+  }
+  &__form{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__input{
+    width: 368px;
+    height: 44px;
+    padding: 15px;
+    border: 2px solid rgba(178,178,178,0.51);
+    border-radius: 6px;
+  }
+  &__button{
+    width: 129px;
+    height: 44px;
+  }
+}
